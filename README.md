@@ -2,7 +2,7 @@
 
 **MS Operations Research @ Columbia** · ex-Data Scientist @ SWAT Mobility · BEng Robotics & AI
 
-Building end-to-end AI systems — LLMs, statistical analysis, and data engineering applied to transit, logistics, and NLP.
+Passionate about turning data into decisions — skilled in machine learning, LLMs, data engineering, statistical modeling, and building end-to-end AI pipelines.
 
 ---
 
@@ -65,3 +65,4 @@ Translates business questions into **SQL/Pandas workflows**, auto-generates visu
 ---
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/oranich-jamkachornkiat)
+
