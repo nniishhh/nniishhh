@@ -1,69 +1,82 @@
 # Hi, I'm Nish 👋
 
-MS Operations Research @ Columbia University · ex-Data Scientist @ SWAT Mobility (Singapore) · Robotics & AI Engineering background
+**MS Operations Research @ Columbia** · ex-Data Scientist @ SWAT Mobility (Singapore) · BEng Robotics & AI
 
-I build AI systems that work end-to-end — from noisy real-world data to deployed, production-ready pipelines. My work sits at the intersection of **machine learning**, **LLMs**, and **data engineering**, with a focus on logistics, NLP, and agentic AI.
-
----
-
-## 🚀 Featured Projects
-
-### 🤖 [ATS Resume Builder](https://github.com/nniishhh/ats-resume-builder)
-An end-to-end resume generation pipeline powered by **Gemini via LiteLLM**.
-- Parses job-description signals to tailor resume bullets
-- Enforces 190–220 character constraints using self-repair loops
-- Compiles polished, formatted PDFs via LaTeX
-
-`Python` `LLMs` `LiteLLM` `Gemini` `LaTeX` `Prompt Engineering`
+I build end-to-end AI systems — from messy real-world data to deployed, production-ready pipelines. My work lives at the intersection of **LLMs**, **statistical analysis**, and **data engineering**, applied to transit, logistics, and NLP.
 
 ---
 
-### 🚇 [Subway OTP Diagnostics](https://github.com/nniishhh/subway-otp-diagnostics)
-A diagnostic tool for analyzing on-time performance in subway/transit systems.
+## 🚇 Subway OTP Diagnostics
 
-`Python` `Data Analysis` `Transit Analytics`
+> *AI-powered on-time performance diagnostic tool for transit systems*
+
+Upload a GTFS-style delay CSV and get an **executive-ready AI diagnosis** of what's going wrong — in seconds.
+
+**What makes it interesting under the hood:**
+
+- **Two-stage intelligence pipeline** — a rule-based pre-analysis engine runs first (IQR outlier detection, delay-jump analysis, stop-sequence gap detection, match-status scoring), then passes a structured JSON payload to **Gemini** for natural-language interpretation. The LLM never sees raw data — only a curated evidence summary.
+- **Auto-schema detection** — the app fuzzy-matches column names so it works with any transit dataset out of the box, no config needed.
+- **7 diagnostic checks** with scored signals: sensor anomaly, missing records, join mapping quality, service pattern mismatch, operational disruption, quality pressure, insufficient evidence.
+- **5 real-world scenario patterns** — isolated extreme delays, recurring bottleneck, schedule vs. actual mismatch, missing trip records, network-wide slowdown — each with curated sample data.
+- **Chart-ready outputs** — delay distributions, station-hour heatmaps, per-trip OTP, delay jump event tables.
+- Fully **Dockerized** with **GitHub Actions CI/CD** deployment.
+
+`Python` `Streamlit` `Gemini` `Plotly` `Pandas` `Docker` `GitHub Actions`
+
+🔗 [github.com/nniishhh/subway-otp-diagnostics](https://github.com/nniishhh/subway-otp-diagnostics)
 
 ---
 
-### 🚗 [Automatic License Plate Recognition (ANPR)](https://github.com/nniishhh/Automatic-License-Plate-Recognition-ANPR-)
-Detects license plates from car images and extracts text using computer vision.
+## 🚗 Automatic License Plate Recognition (ANPR)
 
-`Python` `Jupyter Notebook` `OpenCV` `Computer Vision` `OCR`
+> *End-to-end computer vision pipeline for license plate detection and OCR*
+
+Detects and reads license plates from car images using **WPOD-Net** (Warped Planar Object Detection), a specialized neural network that handles skewed and angled plates. Includes trained model weights and 10 real-world test samples.
+
+`Python` `Jupyter Notebook` `WPOD-Net` `OpenCV` `OCR` `Computer Vision`
+
+🔗 [github.com/nniishhh/Automatic-License-Plate-Recognition-ANPR-](https://github.com/nniishhh/Automatic-License-Plate-Recognition-ANPR-)
 
 ---
 
-### 📧 Email Prime — AI Gmail Assistant *(Columbia, 2025)*
-An AI email assistant built on **AWS Bedrock** that auto-classifies threads and generates structured summaries.
-- RAG pipeline with Titan embeddings + FAISS for long-context retrieval
-- Deployed via Streamlit
+## 🤖 ATS Resume Builder
+
+> *LLM pipeline that tailors resume bullets to job descriptions*
+
+End-to-end resume generation using **Gemini via LiteLLM**. Parses job-description signals, generates bullets with self-repair loops that enforce a 190–220 character constraint, and compiles polished PDFs via LaTeX.
+
+`Python` `LiteLLM` `Gemini` `LaTeX` `Prompt Engineering`
+
+🔗 [github.com/nniishhh/ats-resume-builder](https://github.com/nniishhh/ats-resume-builder)
+
+---
+
+## 📧 Email Prime — AI Gmail Assistant *(Columbia, 2025)*
+
+AWS Bedrock-powered assistant that auto-classifies email threads and generates structured summaries. Implements **RAG with Titan embeddings + FAISS** to handle long-context threads beyond model token limits. Deployed via Streamlit.
 
 `Python` `AWS Bedrock` `RAG` `FAISS` `LangChain` `Streamlit`
 
 ---
 
-### 📊 Airbnb Data Analyst Agent *(Columbia, 2025)*
-An agentic analytics assistant that translates natural-language business questions into **SQL/Pandas workflows**, automated visualizations, and narrative insights.
+## 📊 Airbnb Data Analyst Agent *(Columbia, 2025)*
 
-`Python` `LLMs` `Agentic AI` `SQL` `Pandas` `Data Visualization`
+Agentic analytics assistant that translates natural-language business questions into **SQL/Pandas workflows**, auto-generates visualizations, and produces narrative insights on pricing, occupancy, and listing trends.
+
+`Python` `Agentic AI` `SQL` `Pandas` `LLMs`
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages & Data**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apachespark&logoColor=white)
-
-**AI & ML**
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-
-**Visualization**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 
 ---
 
