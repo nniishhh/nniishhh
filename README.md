@@ -1,4 +1,4 @@
-# Nish Jamkachornkiat
+# Oranich Jamkachornkiat
 
 **MS Operations Research @ Columbia University**  
 **Data Science · Optimization · Analytics Engineering · Agentic AI**
