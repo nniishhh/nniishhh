@@ -1,15 +1,13 @@
-# Hey, I'm Nish 👋
+# Hey, I'm Oranich 👋
 
 MS Operations Research @ Columbia. Data scientist in NYC. I turn messy operational data into decisions.
 
-**Current**
-- Graduate Course Assistant for Agentic AI at Columbia (Fall 2026).
-- Building [nyc-flow-analyst](https://github.com/nniishhh/nyc-flow-analyst), a Claude Code plugin that answers questions about NYC subway travel from live MTA origin-destination data.
+Graduate Course Assistant for Agentic AI at Columbia, Fall 2026.
 
-**Past**
-- **MTA New York City Transit**: matched 18 months of train arrivals to 490K track-work orders and found one corridor behind 38% of midday track-work delay. Leadership moved that work overnight. Shipped the analysis as a daily Spark SQL + Airflow pipeline.
-- **SWAT Mobility**: routing for 10K daily 7-Eleven deliveries (planning time down 70%, delivery cost down 8%); BERT NER address pipeline for DHL Turkey at 98% accuracy; GPS mobility analysis of 2M+ records for a Japanese city.
-- **Shopee**: benchmarked Google, AWS and Azure OCR for merchant onboarding, cutting document verification time 85%.
-- **Agoda**: ticket-priority score and dashboard that got 25% more high-impact supply issues resolved.
+**Projects**
+- [nyc-flow-analyst](https://github.com/nniishhh/nyc-flow-analyst): Claude Code plugin that answers where New Yorkers travel by subway from live MTA origin-destination data, with charts and flow maps.
+- [subway-otp-diagnostics](https://github.com/nniishhh/subway-otp-diagnostics): links 490K track-work orders to 18 months of train arrivals to find which corridors drive midday delay.
+- [airbnb-data-analyst-agent](https://github.com/Agentic-AI-Project-Columbia/airbnb-data-analyst-agent): multi-agent Airbnb analyst that turns a business question over 985K reviews into SQL, charts and a written answer in about 2 minutes.
+- [claimready](https://github.com/Agentic-AI-Project-Columbia/claimready): multi-agent generator for NYC small claims complaints, RAG over a legal corpus, deployed on Cloud Run.
 
 [LinkedIn](https://www.linkedin.com/in/oranich-jamkachornkiat) · oj2191@columbia.edu
